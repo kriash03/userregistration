@@ -355,6 +355,13 @@
                             <constraint firstItem="6MI-z3-caV" firstAttribute="centerY" secondItem="ASz-Kz-935" secondAttribute="centerY" id="nqn-zv-iLX"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="confirmPasswordTextField" destination="MrG-7M-eej" id="Ghx-Rv-RNS"/>
+                        <outlet property="emailAddressTextField" destination="MrG-7M-eej" id="Zj7-4k-jtu"/>
+                        <outlet property="firstNameTextField" destination="1dj-j8-Ylv" id="OGY-Nd-GfU"/>
+                        <outlet property="lastNameTextField" destination="sAh-4Q-rTx" id="kwe-uJ-NAr"/>
+                        <outlet property="passwordTextField" destination="MrG-7M-eej" id="DQ2-ic-8bv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vkv-MW-kTf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
