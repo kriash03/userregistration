@@ -20,8 +20,14 @@ class signupViewController: UIViewController {
     }
     @IBAction func signinButtonTapped(_ sender: Any) {
         print("Sign in button tapped")
+        
+        
     }
     @IBAction func registerNewAccountButtonTapped(_ sender: Any) {
         print("Register account button tapped")
+        let storyboard=UIStoryboard(name: "Main", bundle: nil)
+        let vc=storyboard.instantiateViewController(withIdentifier: "registerViewController")
+        vc.modalPresentationStyle = .overFullScreen
+        present(vc,animated: true)
     }
 }
