@@ -20,10 +20,6 @@ class registerViewController: UIViewController {
 
       
     }
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-
     @IBAction func cancelButtonTapped(_ sender: Any) {
         print("cancel button tapped")
         dismiss(animated: true)
@@ -36,8 +32,17 @@ class registerViewController: UIViewController {
         vc.modalPresentationStyle = .overFullScreen
         present(vc,animated: false)
         
+        NotificationCenter.default.post(name: Notification.Name("text"), object: hobbyTextField.text)
+        
+        
        
         }
     
 }
-
+struct userRegister {
+    var firstName: String
+    var lastName: String
+    var hobby: String
+    var password: String
+    var confirmPassword: String
+}

@@ -388,26 +388,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lkw-Of-BWF">
-                                <rect key="frame" x="0.0" y="59" width="428" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="barTintColor" systemColor="labelColor"/>
-                                <textAttributes key="titleTextAttributes">
-                                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </textAttributes>
-                                <items>
-                                    <navigationItem title="Home" id="iRA-rs-GpK">
-                                        <barButtonItem key="leftBarButtonItem" title="Sign-Out" id="lbT-V1-3fY">
-                                            <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <connections>
-                                                <action selector="signOutButtonTapped:" destination="E8J-zC-iuF" id="Rd2-DY-E2o"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="52" translatesAutoresizingMaskIntoConstraints="NO" id="EO7-O9-TFr">
-                                <rect key="frame" x="20" y="175" width="388" height="387"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="52" translatesAutoresizingMaskIntoConstraints="NO" id="EO7-O9-TFr">
+                                <rect key="frame" x="20" y="269.66666666666669" width="388" height="387.00000000000006"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="uZS-LJ-Whv">
                                         <rect key="frame" x="0.0" y="0.0" width="388" height="238"/>
@@ -447,7 +429,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="00R-yW-ga8">
-                                        <rect key="frame" x="0.0" y="290" width="388" height="97"/>
+                                        <rect key="frame" x="0.0" y="289.99999999999994" width="388" height="97"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="mLn-Oz-XbV">
                                                 <rect key="frame" x="0.0" y="0.0" width="388" height="40"/>
@@ -483,9 +465,31 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lkw-Of-BWF">
+                                <rect key="frame" x="0.0" y="74" width="428" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" systemColor="labelColor"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Home" id="iRA-rs-GpK">
+                                        <barButtonItem key="leftBarButtonItem" title="Sign-Out" id="lbT-V1-3fY">
+                                            <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <action selector="signOutButtonTapped:" destination="E8J-zC-iuF" id="Rd2-DY-E2o"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="F1F-9o-Qy1"/>
                         <color key="backgroundColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="EO7-O9-TFr" firstAttribute="centerY" secondItem="EGb-QX-vVM" secondAttribute="centerY" id="I1s-1E-3QC"/>
+                            <constraint firstItem="EO7-O9-TFr" firstAttribute="centerX" secondItem="EGb-QX-vVM" secondAttribute="centerX" id="gGq-H3-cR7"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="fullNameLabel" destination="dsZ-lJ-CU6" id="bpN-7B-RKV"/>
